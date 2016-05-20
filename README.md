@@ -9,4 +9,5 @@ APP Store地址
 https://itunes.apple.com/cn/app/xiu-xiu-liu-lan-qi-yi-jian/id1108815121?l=en&mt=8
 
 预览图：
+
 ![预览图1](http://a3.mzstatic.com/us/r30/Purple30/v4/57/49/89/57498970-efcc-b525-2560-bb8a4a061890/screen322x572.jpeg)
