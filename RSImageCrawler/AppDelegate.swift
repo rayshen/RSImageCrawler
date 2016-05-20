@@ -10,12 +10,14 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+
+        ADService.sharedInstance()
+    
+        let indexVC = RSIndexViewController()
+        let navigationVC = UINavigationController.init(rootViewController: indexVC)
+        self.window?.rootViewController = navigationVC
         return true
     }
 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="KGk-i7-Jjw" customClass="RSImageTableCell" customModule="RSImageCrawler" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gzn-CS-97o">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="100"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TE2-gu-d7G">
+                        <rect key="frame" x="168" y="38" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="Fq4-J4-XDo"/>
+                            <constraint firstAttribute="height" constant="24" id="GSF-ty-SqV"/>
+                            <constraint firstAttribute="width" constant="44" id="GXs-Sy-Ngz"/>
+                            <constraint firstAttribute="width" constant="24" id="hP9-VE-IUV"/>
+                        </constraints>
+                        <state key="normal" image="down"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fq4-J4-XDo"/>
+                                <exclude reference="GXs-Sy-Ngz"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TE2-gu-d7G" firstAttribute="leading" secondItem="gzn-CS-97o" secondAttribute="trailing" id="1wd-ob-k9u"/>
+                    <constraint firstItem="TE2-gu-d7G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="9bT-6Q-WSK"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TE2-gu-d7G" secondAttribute="bottom" constant="-8" id="EU1-IE-Muk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gzn-CS-97o" secondAttribute="trailing" constant="22" id="GPm-NU-09d"/>
+                    <constraint firstItem="TE2-gu-d7G" firstAttribute="top" secondItem="gzn-CS-97o" secondAttribute="top" id="PBT-z6-r8t"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TE2-gu-d7G" secondAttribute="trailing" id="d9v-4E-HuD"/>
+                    <constraint firstItem="TE2-gu-d7G" firstAttribute="leading" secondItem="gzn-CS-97o" secondAttribute="trailing" constant="8" id="dYp-tE-Z9J"/>
+                    <constraint firstItem="TE2-gu-d7G" firstAttribute="bottom" secondItem="gzn-CS-97o" secondAttribute="bottom" id="eym-Ds-eaW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gzn-CS-97o" secondAttribute="bottom" constant="-8" id="faB-Gt-OCd"/>
+                    <constraint firstItem="TE2-gu-d7G" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iIC-Wx-8xO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gzn-CS-97o" secondAttribute="trailing" constant="40" id="icW-1H-cTN"/>
+                    <constraint firstItem="gzn-CS-97o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="qCk-ZA-3S7"/>
+                    <constraint firstItem="TE2-gu-d7G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="83" id="qyt-kn-UTA"/>
+                    <constraint firstItem="gzn-CS-97o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="uUF-Mb-J30"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="GPm-NU-09d"/>
+                        <exclude reference="icW-1H-cTN"/>
+                        <exclude reference="1wd-ob-k9u"/>
+                        <exclude reference="9bT-6Q-WSK"/>
+                        <exclude reference="EU1-IE-Muk"/>
+                        <exclude reference="PBT-z6-r8t"/>
+                        <exclude reference="eym-Ds-eaW"/>
+                        <exclude reference="qyt-kn-UTA"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="centerImageView" destination="gzn-CS-97o" id="Q4z-xa-Kfh"/>
+                <outlet property="downButton" destination="TE2-gu-d7G" id="y9Y-O6-hbM"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down" width="128" height="128"/>
+    </resources>
+</document>
